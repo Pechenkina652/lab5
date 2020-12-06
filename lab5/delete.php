@@ -25,7 +25,7 @@ require_once 'connection.php';
                 }
                 if($index=="shops_view"){
                     $index="shops";
-                    $query = "DELETE FROM $database.$index WHERE id_shops='$id'";
+                    $query = "DELETE FROM $database.$index WHERE id_shop='$id'";
                 }
                 
                 $result = mysqli_query($link, $query) or die ("Ошибка в запросе");
